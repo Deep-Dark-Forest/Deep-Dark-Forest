@@ -1,0 +1,37 @@
+name: Build Python EXE with PyInstaller
+
+on:
+  push:
+    branches:
+      - main  # 或者你希望触发编译的其他分支
+  pull_request:
+    branches:
+      - main  # 或者你希望触发编译的其他分支
+
+jobs:
+  build:
+    runs-on: windows-latest  # 使用 Windows 环境来构建 EXE 文件
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'  # 你可以根据需要选择 Python 版本
+    
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install pyinstaller  # 安装 pyinstaller 用于编译
+    
+    - name: Compile Python script to EXE
+      run: |
+        pyinstaller --onefile --distpath dist --workpath build --specpath . main.py
+    
+    - name: Upload EXE file
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-python-app-exe
+        path: dist/main.exe  # 上传 EXE 文件
