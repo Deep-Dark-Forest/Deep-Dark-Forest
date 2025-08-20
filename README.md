@@ -14,8 +14,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-一个大学生，目前非常忙，每天要学习学校功课，准备考研，重点增强我的薄弱学科（英语），还要打工……所以有的时候不能及时处理消息，请谅解。
-
-我会 HTML，CSS，和 GitHub Actions。JS 和 Python 只会一点点
-
-我的对外电子邮箱是 deepdarkforest@21cn.com，联系我请使用它。不建议发邮件给 deepdarkforest@sohu.com，因为这个邮箱已经被各种 GitHub 仓库消息填满了，给我发邮件可能看不到。
+2025.8.20
+发现自己沉迷于电子产品，每天基本上电子产品在身边就控制不住一直看……眼睛都看出散光了……即日起暂时戒掉所有智能电子产品，恢复时间待定。
